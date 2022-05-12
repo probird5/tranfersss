@@ -11,7 +11,7 @@ password = str(input("What is your password? "))
 
 
 
-def ssh_transfer():
+def ssh_transfer(file_to_transfer):
     ## Creating the connection
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -31,9 +31,9 @@ def ssh_transfer():
     scp = SCPClient(ssh.get_transport(), progress=progress)
     scp = SCPClient(ssh.get_transport(), progress4=progress4)
 
-    scp.put('ubuntu-20.04.4-live-server-amd64.iso', '~/test.txt')
+    scp.put(file_to_transfer, '~/test.txt')
 # Should now be printing the current progress of your put function. 
-ssh_transfer()
+ssh_transfer(sys.argv[1])
 
 
 
