@@ -1,13 +1,16 @@
-## working name torrent
+## working name tranfersss
 
 # Detail
 
-1) download a torrent
-
-2) transfer the downloaded file to plex via ssh# torrent
+Simple python script to allow you to transfer files via SSH
 
 # initial usage
 
 1) transfer the file you want
 
-`python3 poc.py <file_name>`
+[ADD COMMAND LINE EXAMPLE]
+
+# TODO
+
+[] add destination file path argument
+[] add option to use ssh keys
