@@ -12,5 +12,6 @@ Simple python script to allow you to transfer files via SSH
 
 # TODO
 
-[] add destination file path argument
-[] add option to use ssh keys
+- [] add destination file path argument
+- [] add option to use ssh keys
+- [] Error handling
