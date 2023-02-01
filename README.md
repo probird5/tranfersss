@@ -1,17 +1,35 @@
-## working name tranfersss
+# Tranfersss
 
-# Detail
+### Detail
 
 Simple python script to allow you to transfer files via SSH
 
-# initial usage
+### Installation
 
-1) transfer the file you want
+```
+git clone https://github.com/probird5/tranfersss.git
 
-[ADD COMMAND LINE EXAMPLE]
+cd transfersss
 
-# TODO
+pip3 install -r requirements.txt
 
-- [] add destination file path argument
+python3 transfersss.py 
+```
+
+### initial usage
+
+```
+usage: transfersss.py [-h] [-i HOST] [-f FILE] [-u USERNAME]
+
+options:
+  -h, --help            show this help message and exit
+  -i HOST, --host HOST  Host you want to transfer a file to.
+  -f FILE, --file FILE  The file you want to send
+  -u USERNAME, --username USERNAME  User to authenticate as
+```
+
+### TODO
+
+- [] add destination file path argument (defaults to the home directory as of now)
 - [] add option to use ssh keys
 - [] Error handling
