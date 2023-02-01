@@ -40,7 +40,7 @@ def ssh_transfer(file_to_transfer, destination_host, destination_user):
 parser = argparse.ArgumentParser()
 parser.add_argument('-i', '--host', type = str, help='Host you want to transfer a file to.')
 parser.add_argument('-f', '--file', type = str, help='The file you want to send')
-parser.add_argument('-u', '--username', type = str, help='\nUser to authenticate as')
+parser.add_argument('-u', '--username', type = str, help='User to authenticate as')
 
 
 options = parser.parse_args()

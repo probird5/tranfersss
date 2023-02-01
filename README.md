@@ -16,7 +16,7 @@ pip3 install -r requirements.txt
 python3 transfersss.py 
 ```
 
-### initial usage
+### Usage
 
 ```
 usage: transfersss.py [-h] [-i HOST] [-f FILE] [-u USERNAME]
